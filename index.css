@@ -1,0 +1,22 @@
+.font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.font2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+.dropdown-menu {
+    background-color: #031c32;
+}
+
+.dropdown-menu > a:hover {
+    background-color: cornsilk;
+    color:black !important;
+}
+
+.navbar-nav > li {
+    padding-right:30px;
+}
