@@ -20,9 +20,9 @@ html, body {
     padding-right:20px;
 } */
 
-/* .navbar {
-    padding-right: 30px;
-} */
+.navbar {
+    padding-right: 10px;
+} 
 
 @media(max-width: 1148px) {
     .text-nowrap {
