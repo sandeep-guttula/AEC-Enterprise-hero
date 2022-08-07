@@ -4,72 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-
-    <!-- Montserrat font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min3.4.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
-
-    <title>Front Page</title>
-</head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./hamburger.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <body>
-    <div class="container-fluid">
-        <div class="row" style="height: 100vh;">
-            <!-- first half -->
-            <div class="col-12 col-md-6 col-lg-6" style="background-color:#031c32;">
-                <img src="assests/story_tittle1.png" class="img-fluid w-100" alt="photo">
+    <div class="main_container">
+        <div class="logo_container">
+            <img src="./assests/E_logo(light).png" alt="Qualtrix">
+        </div>
+        <div class="welcome_container">
+            <div class="logo_container_mobile">
+                <img src="./assests/E_logo(light).png" alt="Qualtrix">
+            </div>
+            <div class="nav-bar-container">
+                <div class="nav-item-container">TrackProject</div>
+                <div class="nav-item-container">SignUp</div>
+                <div class="nav-item-container">SignIn</div>
+            </div>
+            <div id="menu_active_items" class="animate__animated ">
+                <div class="mobile_nav_bar" id="mobile_nav_bar">
+                    <div class="mobile-nav-item">TrackProject <i class="fa-solid fa-chart-line"></i></div>
+                    <div class="mobile-nav-item">SignUp <i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+                    <div class="mobile-nav-item">SignIn <i class="fa-regular fa-user"></i></div>
+                </div>
+            </div>
+            <div class="hamburger_mobile_container">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
             </div>
 
-            <!-- second half -->
-            <div class="col-12 col-md-6 col-lg-6" style="background-color: #B3365B;">
-                <ul class="font2">
-                    <li class="active">
-                        <a class="text-white" href="#">SignIN</a>
-                    </li>
-                    <li class="active">
-                        <a class="text-white" href="#">SignUP</a>
-                    </li>
-                    <li class="active">
-                        <a class="text-white" href="#">TrackProject</a>
-                    </li>
-                </ul>
-                
-                <div class="text-left text-white fw-bold font" style="padding-left: 50px; padding-top: 150px;"> 
-                    Welcome
-                    <p class="text-left text-justify text-white font2" style="padding-top:10px;" > 
-                        Since our opening, we have become masters of our craft.
-                        <br />
-                        our commitment to quality products, exceptional services
-                        <br />
-                        and imcomparable customer care keep our community
-                        <br />
-                        coming back again and again.
-                    </p>
-                    <div class="text-left text-white font2" style="padding-top:100px; font-size: 18px;">
-                        <a href="mailto:shaik.jiyaullhaq@gmail.com" target="_top" class="text-white">shaik.jiyaullhaq@gmail.com</a> 
-                        <br />
-                        <a href="tel:+917981186029" class="text-white">79811 86029</a> 
-                    </div>
-                    <div class="text-left text-white font2" style="padding-top: 20px; font-size: 20px">
-                        <i class="fab fa-facebook-square" style="padding-right: 20px"></i>
-                        <i class="fab fa-twitter-square" style="padding-right: 20px"></i>
-                        <i class="fab fa-instagram" style="padding-right: 20px"></i>
-                    </div>
+            <h1>Welcome</h1>
+            <p>
+                Since our opening, we have become masters of our craft.
+            </p>
+            <p>
+                Our commitment to quality products, exceptional services
+                and imcomparable customer care keep our community
+                coming back again and again.
+            </p>
+           
+        </div>
+    </div>
+    <div class="another_container">
+        <div class="contact_container">
+            <h1>Get in Touch</h1>
+            <div class="contact_details">
+                <div class="contact_item"><i class="fa-solid fa-envelope"></i>sshaik.jiyaullhaq@gmail.com</div>
+                <div class="contact_item"><i class="fa-solid fa-phone"></i>+91 79811 86029</div>
+            </div>
+            <div class="social_media">
+                <div class="social_media_item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="social_media_item">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="social_media_item">
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
         </div>
+        <div class="contact_container_mobile">
+            <h1>QUALTRIX</h1>
+            <div class="contact_details">
+                <div class="contact_item"><i class="fa-solid fa-envelope"></i>sshaik.jiyaullhaq@gmail.com</div>
+                <div class="contact_item"><i class="fa-solid fa-phone"></i>+91 79811 86029</div>
+            </div>
+            <div class="social_media">
+                <div class="social_media_item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="social_media_item">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="social_media_item">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="map_container">
+            <h1>Location <i class="fa-solid fa-map-location-dot"></i></h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.655468569842!2d82.06460085079121!3d17.089497188200212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a378165aaaaaaab%3A0x481e8b12b4b80715!2sAditya%20Engineering%20College!5e0!3m2!1sen!2sin!4v1659795647235!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
